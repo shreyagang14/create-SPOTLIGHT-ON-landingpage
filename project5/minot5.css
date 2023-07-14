@@ -1,0 +1,141 @@
+* {
+    padding: 0%;
+    margin: 0%;
+    font-family: gilroy;
+    box-sizing: border-box;
+
+}
+
+html,
+body {
+    height: 100%;
+    width: 100%;
+}
+
+#parent {
+
+    height: 100%;
+    width: 100%;
+    background-color:rgb(156, 161, 107);
+    animation-name: zigzag;
+    animation-duration: 6s;
+    z-index: 4;
+    animation-iteration-count: infinite;
+    animation-timing-function: linear;
+
+}
+#nav {
+    height: 50px;
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 0 200px;
+}
+#head {
+    display: flex;
+    height: 100%;
+    gap: 200px;
+    justify-content: center;
+    align-items: center;
+    font-size: smaller;
+    color: white;
+
+}
+#det h2 {
+    font-size: 2vw;
+
+    position: absolute;
+    top: 12%;
+    font-weight: 350;
+    line-height: 7 0px;
+    font-family:Prata;
+    left: 45%;
+    z-index: 9;
+    color: white;
+}
+#det h1 {
+    font-size: 5vw;
+    position: absolute;
+    top: 20%;
+    font-weight: 4000px;
+    line-height: 7 0px;
+    font-family:Prata;
+    left: 32%;
+    z-index: 9;
+    color: rgb(116, 179, 243);
+}
+#det h4 {
+    font-size: 1vw;
+
+    position: absolute;
+    top: 34%;
+    font-weight: 100;
+    line-height: 7 0px;
+    font-family:Prata;
+    left: 42%;
+    z-index: 9;
+    color: white;
+}
+#scroller{
+    height: 45%;
+    width: 100%;
+    background-color: transparent;
+    position: absolute;
+    top: 40%;
+    display: flex;
+    gap: 10px;
+    white-space: nowrap;
+    animation-name: anim;
+    animation-duration: 6s;
+    z-index: 4;
+    animation-iteration-count: infinite;
+    animation-timing-function: linear;
+}
+#scroller img{
+    border-radius: 20px;
+}
+
+#det1 h1 {
+    font-size: 4vw;
+    position: absolute;
+    top: 80%;
+    font-weight: 350;
+    line-height: 7 0px;
+    font-family:Prata;
+    left: 35%;
+    color: white;
+}
+#det1 h4 {
+    font-size: 1vw;
+    position: absolute;
+    top: 93%;
+    font-weight: 350;
+    line-height: 7 0px;
+    font-family:Prata;
+    left: 50%;
+    z-index: 9;
+    color: white;
+}
+@keyframes anim {
+   0%{
+    transform: translateX(0%);
+   }
+   100%{
+    transform: translateX(-100%);
+   }
+}
+@keyframes zigzag{
+    0%{
+        background-color: rgb(120, 64, 87);
+
+    }
+    50%{
+            background-color: rgb(118, 50, 113);
+
+    }
+    100%{
+        background-color: rgb(94, 49, 100);
+        background-image: linear-gradient(315deg  rgb(82, 20, 66)  );
+    }
+}
